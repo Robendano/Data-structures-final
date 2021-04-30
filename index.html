@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="index.js" defer></script>
+    <title>Quiz app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  Main Section -->
+      <div class="main-section">
+        <div class="quiz-and-host-info card">
+          <div class="quiz-info-section">
+            <img
+              src="https://files.realpython.com/media/Python-Tricks-Chapter-on-Data-Structures_Watermarked.bafeb804a9db.jpg"
+              alt=""
+              class="quiz-image"
+            />
+            <div class="quiz-name-and-num-questions">
+              <div class="quiz-name">Data Structure</div>
+              <div class="quiz-num-questions">Topics : 8</div>
+              <div class="quiz-num-questions">Questions : 40</div>
+            </div>
+          </div>
+
+          <div class="host-info-section">
+            <div class="hosted-by">
+              <div class="host-detail-value">Nursultan Asan uulu - </div>
+              <div class="host-detail-value">Aidar Bekturov - </div>
+              <div class="host-detail-value">Emirlan Zhanakeev</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-item-wrapper">
+          <a class="btn btn-start" href='menu.html'>Play Quiz</a>
+          <button class="btn btn-rule" id="play_quiz">Rules of the guiz</button>
+          <button class="btn btn-highscore" id="high_scores">High Scores</button>
+        </div>
+      </div>
+
+      <!-- Info Box -->
+      <div class="info-box-section">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+          <div class="info">
+            1. You will have only <span>15/20 seconds</span> per each question.
+          </div>
+          <div class="info">
+            2. Once you select your answer, it can't be undone.
+          </div>
+          <div class="info">
+            3. You can't select any option once time goes off.
+          </div>
+          <div class="info">
+            4. You can't exit from the Quiz while you're playing.
+          </div>
+          <div class="info">
+            5. You'll get points on the basis of your correct answers.
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-exit" id="back_main">Back</button>
+        </div>
+      </div>
+
+      <!-- HighScore Box -->
+      <div class="highscore-section">
+        <div class="highscore-title">
+          <h1>High Scores</h1>
+          <p>Top 10</p>
+        </div>
+        <table class="table-scores">
+          <tbody id="list">
+            <tr>
+              <th>Username</th>
+              <th>Points</th>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttons2">
+          <button class="btn btn-gohome" id="back_main">Back</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
